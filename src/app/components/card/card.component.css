@@ -1,0 +1,11 @@
+.task-card {
+  transition: background-color 0.3s ease;
+}
+
+.completed {
+  background-color: #d4edda;
+}
+
+.not-completed {
+  background-color: #9716214e;
+}

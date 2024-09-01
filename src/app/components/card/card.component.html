@@ -1,0 +1,24 @@
+<!-- <div class="card" style="width: 18rem;">
+  <div class="card-body {{!isDone ? '': 'bg-success'}}">
+    <h5 class="card-title">{{ title }}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">{{ description }}</h6>
+    <button class="btn btn-danger mx-4" (click)="doDelete()">Eliminar</button>
+    <button class="btn btn-primary" (click)="update()">Editar</button>
+    <button class="btn btn-primary m-3" (click)="toggleDone()">{{!isDone ? 'Marcar como hecho✔️': 'Marcar como no terminado❌'}}</button>
+  </div>
+</div> -->
+
+
+<div class="col">
+  <div class="card task-card {{!isDone ? 'not-completed': 'completed'}}">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="card-text">{{description}}</p>
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-danger btn-sm" (click)="doDelete()">Eliminar</button>
+        <button class="btn btn-warning btn-sm" (click)="update()">Editar</button>
+        <button class="btn btn-secondary btn-sm" (click)="toggleDone()">{{!isDone ? 'Marcar como hecho✔️': 'Marcar como no terminado❌'}}</button>
+      </div>
+    </div>
+  </div>
+</div>
